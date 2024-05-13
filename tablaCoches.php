@@ -14,29 +14,39 @@ $coches = $sentencia->fetchAll(PDO::FETCH_OBJ);
 	    border: 1px solid black;
 	}
 	img{
-		width: 100px;
+		width: 220px;
+		height: 150px;
+		padding-bottom: 10px;
 	}
-	#cajas{
-		display: grid;
-		grid-template-columns: repeat(3, 1fr);
-		
+	body{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		background-color: gray;
+	}
+	article{
+		margin: 20px;
+		padding-bottom: 10px;
+		text-align: center;
+		border: solid black;
+		font: message-box;
+		background-color: white;
 	}
 	</style>
 </head>
 <body>
 			
 	<?php foreach($coches as $coches){ ?>
-		<div id="cajas">
-			<?php echo $coches->idCoche ?>
-			<?php echo $coches->marca ?>
-			<?php echo $coches->modelo ?>
-			<?php echo $coches->pais ?>
-			<?php echo $coches->precio ?>€
-			<?php echo $coches->caballos ?>cv
-			<?php echo $coches->maletero ?>L
-			<?php echo $coches->puertas ?>
-			<img src="<?php echo $coches->rutaImagen ?>">
-		</div>
+		<article>
+			<img src="<?php echo $coches->rutaImagen ?>"><br>
+		 	Marca: <?php echo $coches->marca ?><br>
+			Modelo: <?php echo $coches->modelo ?><br>
+			País: <?php echo $coches->pais ?><br>
+			Precio: <?php echo $coches->precio ?>€<br>
+			Caballos: <?php echo $coches->caballos ?>cv<br>
+			Maletero: <?php echo $coches->maletero ?>L<br>
+			Puertas: <?php echo $coches->puertas ?><br>
+		</article>
 	<?php } ?>
 		
 	
