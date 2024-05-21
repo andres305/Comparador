@@ -1,28 +1,238 @@
 [
-{"type":"header","version":"5.2.1","comment":"Export to JSON plugin for PHPMyAdmin"},
-{"type":"database","name":"comparador"},
-{"type":"table","name":"coches","database":"comparador","data":
-[
-{"idCoche":"1","marca":"BMW","modelo":"M2 CS","pais":"Alemania","precio":"90000","caballos":"450","maletero":"360","puertas":"3","rutaImagen":"https:\/\/img.remediosdigitales.com\/e1002c\/bmw-m2-cs-2020-filtrado_4\/840_560.jpg"},
-{"idCoche":"2","marca":"BMW","modelo":"M3 E30","pais":"Alemania","precio":"60000","caballos":"400","maletero":"420","puertas":"5","rutaImagen":"https:\/\/www.gallery-aaldering.com\/wp-content\/uploads\/2023\/12\/bmw-m3-e30-1989.jpg"},
-{"idCoche":"3","marca":"BMW","modelo":"M4 CS","pais":"Alemania","precio":"130000","caballos":"500","maletero":"420","puertas":"5","rutaImagen":"https:\/\/mediapool.bmwgroup.com\/cache\/P9\/201703\/P90251019\/P90251019-the-new-bmw-m4-cs-04-2017-600px.jpg"},
-{"idCoche":"4","marca":"BMW","modelo":"M5 CS","pais":"Alemania","precio":"207000","caballos":"635","maletero":"530","puertas":"5","rutaImagen":"https:\/\/hips.hearstapps.com\/hmg-prod\/images\/p90411344-highres-the-new-bmw-m5-cs-st-1611738840.jpg?crop=1xw:0.8890469416785206xh;center,top&resize=1200:*"},
-{"idCoche":"5","marca":"Porsche","modelo":"911 GT3","pais":"Alemania","precio":"285000","caballos":"510","maletero":"130","puertas":"3","rutaImagen":"https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/c\/c1\/Porsche_992_GT3_1X7A0323.jpg\/1200px-Porsche_992_GT3_1X7A0323.jpg"},
-{"idCoche":"6","marca":"Porsche","modelo":"GT3 RS","pais":"Alemania","precio":"290000","caballos":"550","maletero":"120","puertas":"3","rutaImagen":"https:\/\/newsroom.porsche.com\/.imaging\/mte\/porsche-templating-theme\/image_1290x726\/dam\/ES-PLA-local\/2024\/Vehiculos\/Peru_911GTRS\/PLA24_0177_fine.jpg\/jcr:content\/PLA24_0177_fine.jpg"},
-{"idCoche":"7","marca":"Porsche","modelo":"917 K","pais":"Alemania","precio":"5000000","caballos":"670","maletero":"120","puertas":"2","rutaImagen":"https:\/\/www.amalgamcollection.com\/cdn\/shop\/products\/M5288-D70-62_-_Porsche_917K_Gulf_Daytona_1970_1.8_Scale_-_Front_3.4_grande.jpg?v=1601654701"},
-{"idCoche":"8","marca":"Porsche","modelo":"Panamera","pais":"Alemania","precio":"127000","caballos":"520","maletero":"421","puertas":"5","rutaImagen":"https:\/\/hips.hearstapps.com\/hmg-prod\/images\/porsche-panamera-techart-1619864435.jpeg?crop=0.713xw:0.534xh;0.116xw,0.220xh&resize=2048:*"},
-{"idCoche":"9","marca":"Ferrari","modelo":"488 Spider","pais":"Italia","precio":"278000","caballos":"670","maletero":"130","puertas":"3","rutaImagen":"https:\/\/upload.wikimedia.org\/wikipedia\/commons\/0\/06\/Ferrari_488_GTB_IMG_4120.jpg"},
-{"idCoche":"10","marca":"Ferrari","modelo":"Portofino","pais":"Italia","precio":"245000","caballos":"704","maletero":"290","puertas":"3","rutaImagen":"https:\/\/estaticos-cdn.prensaiberica.es\/clip\/ba3845ed-9bd6-4a9a-b5d8-102394e3ea93_alta-libre-aspect-ratio_default_0.jpg"},
-{"idCoche":"11","marca":"Ferrari","modelo":"GTO","pais":"Italia","precio":"40000000","caballos":"400","maletero":"100","puertas":"3","rutaImagen":"https:\/\/cdn.motor1.com\/images\/mgl\/7N3oV\/s1\/ferrari-288-gto-le-foto-storiche.jpg"},
-{"idCoche":"12","marca":"Ferrari","modelo":"F40","pais":"Italia","precio":"295000","caballos":"500","maletero":"90","puertas":"3","rutaImagen":"https:\/\/img.remediosdigitales.com\/ff02ca\/ferrari-f40-valeo-1989-giovanni-agnelli-05\/840_560.jpeg"},
-{"idCoche":"13","marca":"Lamborghini","modelo":"Urus","pais":"Italia","precio":"240000","caballos":"650","maletero":"616","puertas":"5","rutaImagen":"https:\/\/upload.wikimedia.org\/wikipedia\/commons\/e\/ee\/Lamborghini_Urus_20180306_Genf_2018.jpg"},
-{"idCoche":"14","marca":"Lamborghini","modelo":"Veneno","pais":"Italia","precio":"8200000","caballos":"750","maletero":"356","puertas":"3","rutaImagen":"https:\/\/phantom-expansion.unidadeditorial.es\/b45174a6655a8c0204e79eb6f4c36812\/crop\/783x378\/1814x1050\/resize\/640\/assets\/multimedia\/imagenes\/2023\/07\/05\/16885694669612.jpg"},
-{"idCoche":"15","marca":"Lamborghini","modelo":"STO","pais":"Italia","precio":"536000","caballos":"770","maletero":"38","puertas":"3","rutaImagen":"https:\/\/www.lamborghini.com\/sites\/it-en\/files\/DAM\/lamborghini\/facelift_2019\/model_detail\/huracan\/sto\/2023\/10_18_refresh\/gallery\/hura_sto_03.jpg"},
-{"idCoche":"16","marca":"Lamborghini","modelo":"Aventador","pais":"Italia","precio":"4460000","caballos":"740","maletero":"150","puertas":"3","rutaImagen":"https:\/\/www.lamborghini.com\/sites\/it-en\/files\/DAM\/lamborghini\/facelift_2019\/model_gw\/aventador\/2023\/02_09_refresh\/aven_gate_03.jpg"},
-{"idCoche":"17","marca":"Toyota","modelo":"GR Supra","pais":"Japon","precio":"80000","caballos":"260","maletero":"290","puertas":"3","rutaImagen":"https:\/\/hips.hearstapps.com\/hmg-prod\/images\/toyota-supra-2-0l-turbo-2020-1600-01-1579020934.jpg"},
-{"idCoche":"18","marca":"Toyota","modelo":"Celica","pais":"Japon","precio":"30000","caballos":"116","maletero":"150","puertas":"3","rutaImagen":"https:\/\/www.autopista.es\/uploads\/s1\/13\/09\/93\/43\/probamos-el-toyota-celica-2-0-turbo-4wd-el-mitico-coupe-que-sirvio-de-base-a-carlos-sainz.jpeg"},
-{"idCoche":"19","marca":"Toyota","modelo":"GR 86","pais":"Japon","precio":"40000","caballos":"200","maletero":"276","puertas":"3","rutaImagen":"https:\/\/img.remediosdigitales.com\/f07d72\/toyota-gr-86-2\/840_560.jpeg"},
-{"idCoche":"20","marca":"Toyota","modelo":"GR Corolla","pais":"Japon","precio":"45000","caballos":"300","maletero":"596","puertas":"5","rutaImagen":"https:\/\/cdn.motor1.com\/images\/mgl\/0eeY4V\/s1\/20220601_03_01.webp"}
-]
-}
+    {
+        "type": "header",
+        "version": "5.2.1",
+        "comment": "Export to JSON plugin for PHPMyAdmin"
+    },
+    {
+        "type": "database",
+        "name": "comparador"
+    },
+    {
+        "type": "table",
+        "name": "coches",
+        "database": "comparador",
+        "data": [
+            {
+                "idCoche": "1",
+                "marca": "BMW",
+                "modelo": "M2 CS",
+                "pais": "Alemania",
+                "precio": "90000",
+                "caballos": "450",
+                "maletero": "360",
+                "puertas": "3",
+                "rutaImagen": "https:\/\/img.remediosdigitales.com\/e1002c\/bmw-m2-cs-2020-filtrado_4\/840_560.jpg"
+            },
+            {
+                "idCoche": "2",
+                "marca": "BMW",
+                "modelo": "M3 E30",
+                "pais": "Alemania",
+                "precio": "60000",
+                "caballos": "400",
+                "maletero": "420",
+                "puertas": "5",
+                "rutaImagen": "https:\/\/www.gallery-aaldering.com\/wp-content\/uploads\/2023\/12\/bmw-m3-e30-1989.jpg"
+            },
+            {
+                "idCoche": "3",
+                "marca": "BMW",
+                "modelo": "M4 CS",
+                "pais": "Alemania",
+                "precio": "130000",
+                "caballos": "500",
+                "maletero": "420",
+                "puertas": "5",
+                "rutaImagen": "https:\/\/mediapool.bmwgroup.com\/cache\/P9\/201703\/P90251019\/P90251019-the-new-bmw-m4-cs-04-2017-600px.jpg"
+            },
+            {
+                "idCoche": "4",
+                "marca": "BMW",
+                "modelo": "M5 CS",
+                "pais": "Alemania",
+                "precio": "207000",
+                "caballos": "635",
+                "maletero": "530",
+                "puertas": "5",
+                "rutaImagen": "https:\/\/hips.hearstapps.com\/hmg-prod\/images\/p90411344-highres-the-new-bmw-m5-cs-st-1611738840.jpg?crop=1xw:0.8890469416785206xh;center,top&resize=1200:*"
+            },
+            {
+                "idCoche": "5",
+                "marca": "Porsche",
+                "modelo": "911 GT3",
+                "pais": "Alemania",
+                "precio": "285000",
+                "caballos": "510",
+                "maletero": "130",
+                "puertas": "3",
+                "rutaImagen": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/c\/c1\/Porsche_992_GT3_1X7A0323.jpg\/1200px-Porsche_992_GT3_1X7A0323.jpg"
+            },
+            {
+                "idCoche": "6",
+                "marca": "Porsche",
+                "modelo": "GT3 RS",
+                "pais": "Alemania",
+                "precio": "290000",
+                "caballos": "550",
+                "maletero": "120",
+                "puertas": "3",
+                "rutaImagen": "https:\/\/newsroom.porsche.com\/.imaging\/mte\/porsche-templating-theme\/image_1290x726\/dam\/ES-PLA-local\/2024\/Vehiculos\/Peru_911GTRS\/PLA24_0177_fine.jpg\/jcr:content\/PLA24_0177_fine.jpg"
+            },
+            {
+                "idCoche": "7",
+                "marca": "Porsche",
+                "modelo": "917 K",
+                "pais": "Alemania",
+                "precio": "5000000",
+                "caballos": "670",
+                "maletero": "120",
+                "puertas": "2",
+                "rutaImagen": "https:\/\/www.amalgamcollection.com\/cdn\/shop\/products\/M5288-D70-62_-_Porsche_917K_Gulf_Daytona_1970_1.8_Scale_-_Front_3.4_grande.jpg?v=1601654701"
+            },
+            {
+                "idCoche": "8",
+                "marca": "Porsche",
+                "modelo": "Panamera",
+                "pais": "Alemania",
+                "precio": "127000",
+                "caballos": "520",
+                "maletero": "421",
+                "puertas": "5",
+                "rutaImagen": "https:\/\/hips.hearstapps.com\/hmg-prod\/images\/porsche-panamera-techart-1619864435.jpeg?crop=0.713xw:0.534xh;0.116xw,0.220xh&resize=2048:*"
+            },
+            {
+                "idCoche": "9",
+                "marca": "Ferrari",
+                "modelo": "488 Spider",
+                "pais": "Italia",
+                "precio": "278000",
+                "caballos": "670",
+                "maletero": "130",
+                "puertas": "3",
+                "rutaImagen": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/0\/06\/Ferrari_488_GTB_IMG_4120.jpg"
+            },
+            {
+                "idCoche": "10",
+                "marca": "Ferrari",
+                "modelo": "Portofino",
+                "pais": "Italia",
+                "precio": "245000",
+                "caballos": "704",
+                "maletero": "290",
+                "puertas": "3",
+                "rutaImagen": "https:\/\/estaticos-cdn.prensaiberica.es\/clip\/ba3845ed-9bd6-4a9a-b5d8-102394e3ea93_alta-libre-aspect-ratio_default_0.jpg"
+            },
+            {
+                "idCoche": "11",
+                "marca": "Ferrari",
+                "modelo": "GTO",
+                "pais": "Italia",
+                "precio": "40000000",
+                "caballos": "400",
+                "maletero": "100",
+                "puertas": "3",
+                "rutaImagen": "https:\/\/cdn.motor1.com\/images\/mgl\/7N3oV\/s1\/ferrari-288-gto-le-foto-storiche.jpg"
+            },
+            {
+                "idCoche": "12",
+                "marca": "Ferrari",
+                "modelo": "F40",
+                "pais": "Italia",
+                "precio": "295000",
+                "caballos": "500",
+                "maletero": "90",
+                "puertas": "3",
+                "rutaImagen": "https:\/\/img.remediosdigitales.com\/ff02ca\/ferrari-f40-valeo-1989-giovanni-agnelli-05\/840_560.jpeg"
+            },
+            {
+                "idCoche": "13",
+                "marca": "Lamborghini",
+                "modelo": "Urus",
+                "pais": "Italia",
+                "precio": "240000",
+                "caballos": "650",
+                "maletero": "616",
+                "puertas": "5",
+                "rutaImagen": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/e\/ee\/Lamborghini_Urus_20180306_Genf_2018.jpg"
+            },
+            {
+                "idCoche": "14",
+                "marca": "Lamborghini",
+                "modelo": "Veneno",
+                "pais": "Italia",
+                "precio": "8200000",
+                "caballos": "750",
+                "maletero": "356",
+                "puertas": "3",
+                "rutaImagen": "https:\/\/phantom-expansion.unidadeditorial.es\/b45174a6655a8c0204e79eb6f4c36812\/crop\/783x378\/1814x1050\/resize\/640\/assets\/multimedia\/imagenes\/2023\/07\/05\/16885694669612.jpg"
+            },
+            {
+                "idCoche": "15",
+                "marca": "Lamborghini",
+                "modelo": "STO",
+                "pais": "Italia",
+                "precio": "536000",
+                "caballos": "770",
+                "maletero": "38",
+                "puertas": "3",
+                "rutaImagen": "https:\/\/www.lamborghini.com\/sites\/it-en\/files\/DAM\/lamborghini\/facelift_2019\/model_detail\/huracan\/sto\/2023\/10_18_refresh\/gallery\/hura_sto_03.jpg"
+            },
+            {
+                "idCoche": "16",
+                "marca": "Lamborghini",
+                "modelo": "Aventador",
+                "pais": "Italia",
+                "precio": "4460000",
+                "caballos": "740",
+                "maletero": "150",
+                "puertas": "3",
+                "rutaImagen": "https:\/\/www.lamborghini.com\/sites\/it-en\/files\/DAM\/lamborghini\/facelift_2019\/model_gw\/aventador\/2023\/02_09_refresh\/aven_gate_03.jpg"
+            },
+            {
+                "idCoche": "17",
+                "marca": "Toyota",
+                "modelo": "GR Supra",
+                "pais": "Japon",
+                "precio": "80000",
+                "caballos": "260",
+                "maletero": "290",
+                "puertas": "3",
+                "rutaImagen": "https:\/\/hips.hearstapps.com\/hmg-prod\/images\/toyota-supra-2-0l-turbo-2020-1600-01-1579020934.jpg"
+            },
+            {
+                "idCoche": "18",
+                "marca": "Toyota",
+                "modelo": "Celica",
+                "pais": "Japon",
+                "precio": "30000",
+                "caballos": "116",
+                "maletero": "150",
+                "puertas": "3",
+                "rutaImagen": "https:\/\/www.autopista.es\/uploads\/s1\/13\/09\/93\/43\/probamos-el-toyota-celica-2-0-turbo-4wd-el-mitico-coupe-que-sirvio-de-base-a-carlos-sainz.jpeg"
+            },
+            {
+                "idCoche": "19",
+                "marca": "Toyota",
+                "modelo": "GR 86",
+                "pais": "Japon",
+                "precio": "40000",
+                "caballos": "200",
+                "maletero": "276",
+                "puertas": "3",
+                "rutaImagen": "https:\/\/img.remediosdigitales.com\/f07d72\/toyota-gr-86-2\/840_560.jpeg"
+            },
+            {
+                "idCoche": "20",
+                "marca": "Toyota",
+                "modelo": "GR Corolla",
+                "pais": "Japon",
+                "precio": "45000",
+                "caballos": "300",
+                "maletero": "596",
+                "puertas": "5",
+                "rutaImagen": "https:\/\/cdn.motor1.com\/images\/mgl\/0eeY4V\/s1\/20220601_03_01.webp"
+            }
+        ]
+    }
 ]
