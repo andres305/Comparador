@@ -1,0 +1,28 @@
+table, th, td {
+    border: 1px solid black;
+}
+img {
+    width: 220px;
+    height: 150px;
+    padding-bottom: 10px;
+}
+body {
+    background-image: url(../img/fondo.png);
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+}
+#container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+article {
+    margin: 20px;
+    padding-bottom: 10px;
+    text-align: center;
+    border: solid black;
+    font: message-box;
+    background-color: white;
+}
