@@ -10,7 +10,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $password = password_hash($_POST['password'], PASSWORD_BCRYPT);
 
     // Prepara la consulta SQL para insertar un nuevo usuario en la base de datos
-    $sql = "INSERT INTO usuarios (username, password) VALUES (?, ?)";
+    $sql = "INSERT INTO administradores (username, password) VALUES (?, ?)";
     $stmt = $base_de_datos->prepare($sql);
 
     // Ejecuta la consulta con el nombre de usuario y la contraseña hash
@@ -33,13 +33,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 </head>
 <body>
     <h2>Registrarse</h2>
-    <form method="POST" action="register.php">
+    <form method="POST" action="registerAdmin.php">
         <label for="username">Usuario:</label>
         <input type="text" id="username" name="username" required>
         <label for="password">Contraseña:</label>
         <input type="password" id="password" name="password" required>
         <button type="submit">Registrarse</button>
     </form>
-    <p>¿Ya tienes una cuenta? <a href="login.php">Inicia sesión aquí</a></p>
 </body>
 </html>

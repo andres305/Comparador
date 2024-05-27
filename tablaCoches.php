@@ -19,8 +19,46 @@ $coches = Coche::getAll($base_de_datos);
     <meta charset="UTF-8">
     <title>Tabla de ejemplo</title>
     <link rel="stylesheet" href="styles/styleTabla.css">
+    <style>
+        header {
+            background-color: #1f1f1f;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 2px solid #333333;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.6);
+        }
+        h1 {
+            margin: 0;
+            color: #e0e0e0;
+            font-size: 2.5em;
+            font-weight: 300;
+            font-family: 'Fira Code', monospace;
+        }
+        button{
+            border: 2px solid rgb(1, 20, 114);
+            padding: 18px 36px;
+            font-family: "Lucida Console";
+            font-size: 14px;
+            cursor: pointer;
+            box-shadow: inset 0 0 0 0 rgb(1, 20, 114);
+            -webkit-transition: ease-out 0.4s;
+            -moz-transition: ease-out 0.4s;
+            transition: ease-out 0.4s;
+            margin-top: 20px;
+            margin-left: 50px;
+        }
+        button:hover{
+            box-shadow: inset 400px 50px 0 0 rgb(1, 20, 114);
+        }
+    </style>
 </head>
-<body>
+<header>
+    <h1>Comparador de coches</h1>
+    <button>Comparador</button>
+    <a href="tablaCoches.php"><button>Cátalogo</button></a>
+    <a href="LoginAdmin/loginAdmin.php"><button>Modo administrador</button></a>
+</header>
+<body>  
     <div id="container">
     <?php 
     // Recorremos el array de coches y generamos el HTML para cada coche

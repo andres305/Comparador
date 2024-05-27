@@ -9,7 +9,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $password = $_POST['password'];
 
     // Prepara la consulta SQL para seleccionar el usuario con el nombre de usuario proporcionado
-    $sql = "SELECT * FROM usuarios WHERE username = ?";
+    $sql = "SELECT * FROM administradores WHERE username = ?";
     $stmt = $base_de_datos->prepare($sql);
     // Obtiene el resultado de la consulta como un array asociativo
     $stmt->execute([$username]);
@@ -19,10 +19,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Verifica si se encontró un usuario y si la contraseña proporcionada es correcta
     if ($user && password_verify($password, $user['password'])) {
         // Almacena el ID del usuario y el nombre de usuario en las variables de sesión
-        $_SESSION['user_id'] = $user['id'];
+        $_SESSION['user_id'] = $user['idAdmnin'];
         $_SESSION['username'] = $user['username'];
         // Redirige al usuario a la página tablaCoches.php después de un inicio de sesión exitoso
-        header("Location: ../tablaCoches.php");
+        header("Location: ../AdministrarBD/administrarBD.php");
         exit();
     } else {
         // Muestra un mensaje de error si el usuario no se encuentra o la contraseña es incorrecta
@@ -30,23 +30,28 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 }
 ?>
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Iniciar Sesión</title>
-    <link rel="stylesheet" href="../styles/styleLogin.css">
+    <title>Modo Admin</title>
+    <link rel="stylesheet" href="../styles/styleLoginAdmin.css">
 </head>
+<header>
+    <h1>Comparador de coches</h1>
+    <button>Comparador</button>
+    <a href="../tablaCoches.php"><button>Cátalogo</button></a>
+    <a href="LoginAdmin/loginAdmin.php"><button>Modo administrador</button></a>
+</header>
 <body>
     <h2>Iniciar Sesión</h2>
-    <form method="POST" action="login.php">
+    <form method="POST" action="loginAdmin.php">
         <label for="username">Usuario:</label>
         <input type="text" id="username" name="username" required>
         <label for="password">Contraseña:</label>
         <input type="password" id="password" name="password" required>
         <button type="submit">Iniciar sesión</button>
     </form>
-    <p>¿No tienes una cuenta? <a href="register.php">Regístrate aquí</a></p>
+    
 </body>
 </html>
