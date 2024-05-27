@@ -18,14 +18,24 @@ if($coches === FALSE){
 	<meta charset="UTF-8">
 	<title>Editar Base de Datos</title>
 	<style>
-		
+		body {
+    		font-family: Arial, sans-serif;
+			color: white;
+    		background-image: url(../img/fondo.png);
+     		background-size: cover;
+    		background-position: center; 
+    		background-repeat: no-repeat; 
+    		background-attachment: fixed;
+    		margin: 0;
+    		padding: 20px;
+		}
 	</style>
 </head>
 <body>
 	<form method="post" action="guardarDatosEditados.php">
-		<!-- Ocultamos el ID para que el usuario no pueda cambiarlo (en teoría) -->
+		<!-- Ocultamos el ID para que el usuario no pueda cambiarlo -->
 		<input type="hidden" name="idCoche" value="<?php echo $coches->idCoche; ?>">
-
+		
 		<label">URL Imagen:</label>
 		<br>
 		<input value="<?php echo $coches->rutaImagen ?>" name="rutaImagen" required type="text" id="rutaImagen">

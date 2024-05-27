@@ -33,9 +33,9 @@ $coches = $sentencia->fetchAll(PDO::FETCH_OBJ);
 				<td><?php echo $coches->marca ?></td>
 				<td><?php echo $coches->modelo ?></td>
 				<td><?php echo $coches->pais ?></td>
-				<td><?php echo $coches->precio ?></td>
-				<td><?php echo $coches->caballos ?></td>
-				<td><?php echo $coches->maletero ?></td>
+				<td><?php echo $coches->precio ?>€</td>
+				<td><?php echo $coches->caballos ?>cv</td>
+				<td><?php echo $coches->maletero ?>L</td>
 				<td><?php echo $coches->puertas ?></td>
 				<td><a href="<?php echo "editar.php?idCoche=" . $coches->idCoche?>">Editar</a></td>
 				<td><a href="<?php echo "eliminar.php?idCoche=" . $coches->idCoche?>">Eliminar</a></td>

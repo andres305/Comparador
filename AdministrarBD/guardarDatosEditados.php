@@ -1,6 +1,6 @@
 <?php
 
-#Salir si alguno de los datos no está presente
+//Salir si alguno de los datos no está presente
 if(
 	!isset($_POST["idCoche"]) ||
 	!isset($_POST["marca"]) || 
@@ -12,9 +12,9 @@ if(
 	!isset($_POST["puertas"]) 
 ) exit();
 
-#Si todo va bien, se ejecuta esta parte del código...
+//Si todo va bien, se ejecuta esta parte del código...
 
-include_once "base_de_datos.php";
+include_once "../base_de_datos.php";
 $idCoche = $_POST["idCoche"];
 $marca = $_POST["marca"];
 $modelo = $_POST["modelo"];
@@ -25,7 +25,7 @@ $maletero = $_POST["maletero"];
 $puertas = $_POST["puertas"];
 
 $sentencia = $base_de_datos->prepare("UPDATE coches SET marca = ?, modelo = ?, pais = ?, precio = ?, caballos = ?, maletero = ?, puertas = ? WHERE idCoche = ?;");
-$resultado = $sentencia->execute([$marca, $modelo, $pais, $precio, $caballos, $maletero, $puertas, $idCoche]); # Pasar en el mismo orden de los ?
+$resultado = $sentencia->execute([$marca, $modelo, $pais, $precio, $caballos, $maletero, $puertas, $idCoche]); 
 if($resultado === TRUE) echo "Cambios guardados";
 else echo "Algo salió mal. Por favor verifica que la tabla exista, así como el ID del coche";
 ?>

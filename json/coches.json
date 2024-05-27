@@ -234,5 +234,25 @@
                 "rutaImagen": "https:\/\/cdn.motor1.com\/images\/mgl\/0eeY4V\/s1\/20220601_03_01.webp"
             }
         ]
+    },
+    {
+        "idCoche": "1",
+        "marca": "BMW",
+        "modelo": "M2 CS",
+        "pais": "Alemania",
+        "precio": "90000",
+        "caballos": "450",
+        "maletero": "360",
+        "puertas": "2"
+    },
+    {
+        "idCoche": "30",
+        "marca": "BMW",
+        "modelo": "M2 CS",
+        "pais": "Alemania",
+        "precio": "90000",
+        "caballos": "450",
+        "maletero": "360",
+        "puertas": "3"
     }
 ]
