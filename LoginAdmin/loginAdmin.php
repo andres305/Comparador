@@ -44,12 +44,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <a href="LoginAdmin/loginAdmin.php"><button>Modo administrador</button></a>
 </header>
 <body>
-    <h2>Iniciar Sesión</h2>
+    <h2>Iniciar Sesión como administrador</h2>
     <form method="POST" action="loginAdmin.php">
-        <label for="username">Usuario:</label>
-        <input type="text" id="username" name="username" required>
-        <label for="password">Contraseña:</label>
-        <input type="password" id="password" name="password" required>
+        <label for="username">Usuario:</label><br>
+        <input type="text" id="username" name="username" required><br><br>
+        <label for="password">Contraseña:</label><br>
+        <input type="password" id="password" name="password" required><br><br>
         <button type="submit">Iniciar sesión</button>
     </form>
     

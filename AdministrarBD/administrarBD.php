@@ -9,6 +9,22 @@ $coches = $sentencia->fetchAll(PDO::FETCH_OBJ);
 	<meta charset="UTF-8">
 	<title>Administrar Base de Datos</title>
 	<link rel="stylesheet" href="../styles/styleAdministrar.css">
+	<style>
+		#btn{
+    		border: 2px solid rgb(1, 20, 114);
+    		padding: 18px 36px;
+    		font-family: "Lucida Console";
+    		font-size: 14px;
+    		cursor: pointer;
+    		box-shadow: inset 0 0 0 0 rgb(1, 20, 114);
+    		-webkit-transition: ease-out 0.4s;
+    		-moz-transition: ease-out 0.4s;
+    		transition: ease-out 0.4s;
+		}
+		#btn:hover{
+    		box-shadow: inset 400px 50px 0 0 rgb(1, 20, 114);
+		}
+	</style>
 </head>
 <body>
 	<table>
@@ -23,7 +39,6 @@ $coches = $sentencia->fetchAll(PDO::FETCH_OBJ);
 				<th>Maletero</th>
 				<th>Puertas</th>
 				<th>Editar</th>
-				<th>Eliminar</th>
 			</tr>
 		</thead>
 		<tbody>
@@ -38,10 +53,10 @@ $coches = $sentencia->fetchAll(PDO::FETCH_OBJ);
 				<td><?php echo $coches->maletero ?>L</td>
 				<td><?php echo $coches->puertas ?></td>
 				<td><a href="<?php echo "editar.php?idCoche=" . $coches->idCoche?>">Editar</a></td>
-				<td><a href="<?php echo "eliminar.php?idCoche=" . $coches->idCoche?>">Eliminar</a></td>
 			</tr>
 			<?php } ?>
 		</tbody>
 	</table>
+	<a href="../tablaCoches.php"><button id="btn">Salir</button></a>
 </body>
 </html>
