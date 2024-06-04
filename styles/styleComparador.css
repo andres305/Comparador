@@ -1,3 +1,18 @@
+body {
+    background-image: url(../img/fondo.png);
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+}
+thead{
+    font-family: Montserrat, sans-serif;
+}
+tbody{
+    background-color: rgba(30, 0, 151, 0.509);
+    color: white;
+    font-family: Montserrat, sans-serif;
+}
 header {
     background-color: #1f1f1f;
     padding: 20px;
@@ -5,14 +20,28 @@ header {
     border-bottom: 2px solid #333333;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.6);
 }
-header h1 {
+h1 {
     margin: 0;
     color: #e0e0e0;
     font-size: 2.5em;
     font-weight: 300;
     font-family: 'Fira Code', monospace;
 }
-header button{
+table {
+    width: 45%;
+    margin: 20px;
+    border-collapse: collapse;
+    display: inline-table;
+}
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+th {
+    background-color: #f2f2f2;
+}
+button{
     border: 2px solid rgb(1, 20, 114);
     padding: 18px 36px;
     font-family: "Lucida Console";
@@ -25,27 +54,6 @@ header button{
     margin-top: 20px;
     margin-left: 50px;
 }
-header button:hover{
+button:hover{
     box-shadow: inset 400px 50px 0 0 rgb(1, 20, 114);
-}
-body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-image: url('../img/fondo.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    margin: 0;
-    padding: 0;
-}
-
-form {
-    background-color: rgba(255, 255, 255, 0.9);
-    padding: 20px;
-    border-radius: 10px;
-    margin: 20px;
-    width: 300px;
-    text-align: center;
 }

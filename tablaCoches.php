@@ -17,7 +17,7 @@ $coches = Coche::getAll($base_de_datos);
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Tabla de ejemplo</title>
+    <title>Comparador de coches</title>
     <link rel="stylesheet" href="styles/styleTabla.css">
     <style>
         header {
@@ -50,21 +50,31 @@ $coches = Coche::getAll($base_de_datos);
         button:hover{
             box-shadow: inset 400px 50px 0 0 rgb(1, 20, 114);
         }
+        article {
+            display: inline-block;
+            margin: 20px;
+        }
+        #container {
+            text-align: center;
+        }
+        #formComparador {
+            margin-top: 20px;
+        }
     </style>
 </head>
 <header>
     <h1>Comparador de coches</h1>
-    <button>Comparador</button>
-    <a href="tablaCoches.php"><button>Cátalogo</button></a>
+    <a href="tablaCoches.php"><button>Catálogo</button></a>
     <a href="LoginAdmin/loginAdmin.php"><button>Modo administrador</button></a>
 </header>
 <body>  
     <div id="container">
+    <form id="formComparador" action="Comparar/comparador.html" method="get">
     <?php 
     // Recorremos el array de coches y generamos el HTML para cada coche
-    foreach($coches as $coche) { ?>
+    foreach($coches as $index => $coche) { ?>
         <article>
-            <img src="<?php echo $coche->rutaImagen; ?>"><br>
+            <img src="<?php echo $coche->rutaImagen; ?>" alt="Imagen de <?php echo $coche->marca . ' ' . $coche->modelo; ?>"><br>
             <div id="txt">
             <b>Marca:</b> <?php echo $coche->marca; ?><br>
             <b>Modelo:</b> <?php echo $coche->modelo; ?><br>
@@ -73,9 +83,12 @@ $coches = Coche::getAll($base_de_datos);
             <b>Caballos:</b> <?php echo $coche->caballos; ?>cv<br>
             <b>Maletero:</b> <?php echo $coche->maletero; ?>L<br>
             <b>Puertas:</b> <?php echo $coche->puertas; ?><br>
+            <input type="checkbox" name="coches[]" value="<?php echo $index; ?>"> Comparar<br>
             </div>
         </article>
     <?php } ?>
+        <button type="submit">Comparar</button>
+    </form>
     </div>
     <a href="LogIn/logout.php"><button id="btnLogout">Cerrar sesión</button></a>
 </body>

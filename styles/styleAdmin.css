@@ -1,0 +1,72 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('../img/fondo.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+}
+form {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+}
+
+label, input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+h2 {
+    text-align: center;
+    color: white;
+}
+
+p {
+    text-align: center;
+    color: white;
+}
+header {
+    background-color: #1f1f1f;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid #333333;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.6);
+}
+h1 {
+    margin: 0;
+    color: #e0e0e0;
+    font-size: 2.5em;
+    font-weight: 300;
+    font-family: 'Fira Code', monospace;
+}
+button{
+    border: 2px solid rgb(1, 20, 114);
+    padding: 18px 36px;
+    font-family: "Lucida Console";
+    font-size: 14px;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 0 rgb(1, 20, 114);
+    -webkit-transition: ease-out 0.4s;
+    -moz-transition: ease-out 0.4s;
+    transition: ease-out 0.4s;
+    margin-top: 20px;
+    
+}
+button:hover{
+    box-shadow: inset 400px 50px 0 0 rgb(1, 20, 114);
+}

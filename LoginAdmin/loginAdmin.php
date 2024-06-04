@@ -35,13 +35,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <head>
     <meta charset="UTF-8">
     <title>Modo Admin</title>
-    <link rel="stylesheet" href="../styles/styleLoginAdmin.css">
+
 </head>
 <header>
     <h1>Comparador de coches</h1>
-    <button>Comparador</button>
     <a href="../tablaCoches.php"><button>Cátalogo</button></a>
-    <a href="LoginAdmin/loginAdmin.php"><button>Modo administrador</button></a>
+    <link rel="stylesheet" href="../styles/styleAdmin.css">
 </header>
 <body>
     <h2>Iniciar Sesión como administrador</h2>
